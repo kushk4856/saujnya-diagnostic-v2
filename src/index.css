@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    padding-block: 15px;
+    padding-inline: 5px;
+}
+
+
+.visible {
+    background-color: red;
+}
+
+
+.why_choose .inner_choose .why_main ul {
+    display: flex !important;
+    flex-direction: row;
+}
+
+.why_choose .inner_choose .why_main ul li {
+    list-style: none;
+}
+
+
+.why_choose .inner_choose .why_main .row .col-3 .tag-line .percentage {
+    padding-left: 4rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #bc74a5;
+}
+
+.why_choose .inner_choose .why_main .row .col-3 .tag-line .txt {
+    padding-left: 1.2rem;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #555;
+
+
+}
+
+
+.why_choose .inner_choose .why_main .row .col-3 .skill {
+    width: 16rem;
+    height: 12rem;
+    position: relative;
+}
+
+.why_choose .inner_choose .why_main .row .col-3 .skill .outer {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7)
+}
+
+.why_choose .inner_choose .why_main .row .col-3 .skill .outer .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* padding: 2.4rem; */
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(255, 255, 255, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05)
+}
+
+.why_choose #number {
+    font-weight: 600px;
+    font-size: 2.4rem;
+    color: #bc74a5;
+}
+
+
+.circle1 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: bar1 1.5s linear forwards;
+}
+
+.circle2 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: bar2 1.5s linear forwards;
+}
+
+.circle3 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: bar3 1.5s linear forwards;
+}
+
+.circle4 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: bar4 1.5s linear forwards;
+}
+
+.skill svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slick-slide>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bar1 {
+    100% {
+        stroke-dashoffset: 165.2;
+    }
+}
+
+@keyframes bar2 {
+    100% {
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes bar3 {
+    100% {
+        stroke-dashoffset: 130;
+    }
+}
+
+@keyframes bar4 {
+    100% {
+        stroke-dashoffset: 60;
+    }
+}
+
+
+@layer components {
+    .max-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .custom-shadow {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    }
+
+    .disorder-shadow {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+
+    .custom-underline {
+        @apply relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:bg-[#CED4DA]
+    }
+
+    .form-control {
+        @apply w-full rounded-md border-[#CED4DA] p-2
+    }
+
+
+
+
+}

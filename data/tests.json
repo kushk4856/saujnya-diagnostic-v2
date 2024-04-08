@@ -1,0 +1,82 @@
+{
+  "tests": [
+    {
+      "testName": "Covid severty profile",
+      "parameters": "28",
+      "tests": ["CBC", "LFT", "KFT", "FSH"],
+      "price": 200,
+      "details": {
+        "img": "https://www.cncpathlab.com/assets/uploads/236_1680170000product-017.jpg",
+        "heading": "title",
+        "para1": "A Covid Severity Profile blood test can indicate the severity of COVID-19-related illness and a patient's risk of death at the time of diagnosis.",
+        "para2": "The tests that are included in your Covid Severity Profile are CBC, Crp, Sgpt, Ferritin, Interleukin-6(Il-6), Ldh, D-dimer. CNC Pathlab has 35 parameters that provide you with a detailed picture of your health. CNC Pathlab is a leading diagnostic lab that offers a wide range of health services to customers. In order to maintain your health from the comfort of your own home, you can choose from the Covid Severity Profile or other packages that are more suited to your needs (at-home services)."
+      },
+      "id": "Covid severty profile"
+    },
+    {
+      "testName": "Obesity Pannel",
+      "parameters": "9 ",
+      "tests": ["CBC", "LFT", "KFT", "Blood Sugar"],
+      "price": 900,
+      "details": {
+        "img": "https://www.cncpathlab.com/assets/uploads/190_1680075261product-06.jpg",
+        "heading": "Obesity Test",
+        "par1": "The ABO blood group test is a test used to determine an individual's blood type. It is the most common way of categorizing different types of blood and is determined by the presence of two different antigens, A and B, on the surface of red blood cells. The test is used to match blood for transfusions and for other medical purposes, such as determining paternity. There are four different ABO blood types: A, B, AB, and O. Additionally, there is a fifth type, known as Rh type, which is determined by the presence of an additional antigen, the Rh factor.",
+        "para2": "Obesity is a severe condition characterised by an excess of body fat. Obesity is more than a minor issue. It's a medical condition that raises your risk of developing other diseases and health issues like heart disease, diabetes, high blood pressure, and some cancers. In this type of test at least 10 to12 hours of fasting is required."
+      },
+      "id": "Obesity Pannel"
+    },
+    {
+      "testName": "Fever Panel",
+      "parameters": "30 ",
+      "tests": ["CBC", "LFT", "KFT", "PRL"],
+      "price": 300,
+      "details": {
+        "img": "https://www.cncpathlab.com/assets/uploads/226_1680076070product-08.jpg",
+        "heading": "title",
+        "para1": "A fever panel advance is a diagnostic test that is used to identify the underlying cause of a fever in patients. This test is typically ordered when a patient presents with a fever that has lasted for more than a few days, and other diagnostic tools have failed to identify the cause.",
+        "para2": "The first step in performing a fever panel-advance is to conduct a thorough medical history and physical examination. The healthcare provider will ask questions about the onset and duration of the fever, as well as any other symptoms or medical conditions that the patient may have. They will also examine the patient for signs of infection or inflammation, such as redness, swelling, or pus."
+      },
+      "id": "Fever Panel"
+    },
+    {
+      "testName": "Infection profile",
+      "parameters": "7 ",
+      "tests": ["CBC", "LFT", "KFT", "Folic Acid"],
+      "price": 900,
+      "details": {
+        "img": "https://www.cncpathlab.com/assets/uploads/229_1680082867product-011.jpg",
+        "heading": "title",
+        "para1": "In Delhi, there are numerous healthcare facilities that offer an infections profile test. This test is typically performed by medical professionals who have expertise in microbiology or infectious diseases.",
+        "para2": "Infections profile tests are designed to identify the presence of infectious agents in a patient's bodily fluids, tissues, or other specimens, such as blood, urine, or saliva. The test may involve analyzing the patient's samples using various techniques, including cultures, stains, and molecular methods, among others."
+      },
+      "id": "Infection profile"
+    },
+    {
+      "testName": "Infertility Female profile",
+      "parameters": "15 ",
+      "tests": ["CBC", "Iron", "KFT", "HBA1c"],
+      "price": 999,
+      "details": {
+        "img": "https://www.cncpathlab.com/assets/uploads/230_1680155160product-012.jpg",
+        "heading": "title",
+        "para1": "There are various reasons why the number of people interested in getting an infertility check-up is steadily increasing. Infertility is defined as the inability to conceive a child. It goes without saying that an infertility check-up is quite important, as it can cause a great deal of misery in a couple's marriage and even shatter their link of togetherness. Infertility has no specific signs that can be noticed, hence a checkup is essential.",
+        "para2": "CNC Pathlab has 3 parameters that provide you a detailed picture of your health. By timely detection and screening may help you easily to avoid diseases and with CNC Pathlab Infertility-Female Profile-I you can easily track your health records in the best way. CNC Pathlab is most trusted and leading diagnostic lab for providing all kind of health services to customers. You can opt for the Infertility-Female Profile-I or other packages that are better suited to your needs in order to maintain your health from your comfort place (at home services)."
+      },
+      "id": "Infertility Female profile"
+    },
+    {
+      "testName": "Anemia profile",
+      "parameters": "20 ",
+      "tests": ["CBC", "LFT", "Thyroid Profile", "KFT"],
+      "price": 599,
+      "details": {
+        "img": "https://www.cncpathlab.com/assets/uploads/333_1680244962product-025.jpg",
+        "heading": "title",
+        "para1": "If you are looking for an anemia profile-advance test in Delhi, there are several options available to you. Anemia is a common condition that can affect anyone, and it is important to get tested to ensure that you receive the proper treatment.",
+        "para2": "In conclusion, if you are looking for an anemia profile-advance test in Delhi, there are plenty of options available to you. Be sure to choose a reputable and experienced diagnostic center or hospital to ensure that you receive accurate and reliable results that will help guide your treatment plan. By taking the time to research your options and choosing a high-quality facility, you can feel confident in your healthcare journey and take control of your anemia diagnosis. Don't hesitate to reach out to your healthcare provider if you have any questions or concerns about the test or your condition. With proper care and attention, you can effectively manage your anemia and improve your quality of life."
+      },
+      "id": "Anemia profile"
+    }
+  ]
+}

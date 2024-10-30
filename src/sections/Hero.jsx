@@ -1,9 +1,13 @@
-import { banner1, banner2, banner3 } from "../assets";
+import SimpleSlider from "../components/SimpleSlider";
+// import b1 from "../assets/images/banner-1.webp";
+// import b2 from "../assets/images/banner-2.webp";
+// import b3 from "../assets/images/banner-3.webp";
 
 export default function Hero() {
   return (
-    <div className="bg-white mx-4 lg:p-14 ">
-      <div
+    <div className="bg-white mx-4 lg:p-7 ">
+      <SimpleSlider />
+      {/* <div
         id="indicators-carousel"
         className="relative w-full  rounded-3xl overflow-hidden"
         data-carousel="static"
@@ -14,7 +18,7 @@ export default function Hero() {
             data-carousel-item="active"
           >
             <img
-              src={banner1}
+              src={b2}
               className="absolute object-fill h-full block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt="..."
             />
@@ -22,7 +26,7 @@ export default function Hero() {
 
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <img
-              src={banner2}
+              src={b1}
               className="absolute h-full  block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt="..."
             />
@@ -30,7 +34,7 @@ export default function Hero() {
 
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <img
-              src={banner3}
+              src={b3}
               className="absolute h-full block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt="..."
             />
@@ -38,7 +42,7 @@ export default function Hero() {
 
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <img
-              src={banner1}
+              src={b1}
               className="absolute h-full block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt="..."
             />
@@ -46,7 +50,7 @@ export default function Hero() {
 
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <img
-              src={banner2}
+              src={b2}
               className="absolute h-full block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt="..."
             />
@@ -139,7 +143,7 @@ export default function Hero() {
             <span className="sr-only">Next</span>
           </span>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

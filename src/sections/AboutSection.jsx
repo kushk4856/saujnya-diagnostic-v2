@@ -4,7 +4,7 @@ import aboutImg2 from "../assets/images/about-2.jpg";
 
 const AboutSection = () => {
   return (
-    <section className="py-24 relative bg-[#e7eff0]">
+    <section className="py-24 px-6 relative bg-[#e7eff0]">
       <div className="patter_layer layer_1"></div>
       <div className="patter_layer layer_2"></div>
       <div className="max-container flex  m-auto">

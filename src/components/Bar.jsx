@@ -27,7 +27,7 @@ export default function Bar({ itag, percent, time, circle, type }) {
         >
           <defs>
             <linearGradient id="GradientColor">
-              <stop offset="0%" stopColor="#bc74a5" />
+              <stop offset="0%" stopColor="#288de9" />
               <stop offset="100%" stopColor="#0e54ae" />
             </linearGradient>
           </defs>
@@ -41,7 +41,7 @@ export default function Bar({ itag, percent, time, circle, type }) {
         </svg>
       </div>
       <div className="tag-line" data-aos="zoom-in" data-aos-duration="500">
-        <div className="percentage">{count} %</div>
+        <div className="percentage text-primary">{count} %</div>
         <div className="txt">{type}</div>
       </div>
     </li>

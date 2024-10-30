@@ -4,24 +4,30 @@ import { logo } from "../assets";
 
 export default function Footer() {
   return (
-    <div className="w-full  bg-[#652F91] px-40 py-20 ">
+    <div className="w-full  bg-blue-500 px-6 py-6 ">
       <div className="flex flex-wrap justify-between gap-10 text-white">
-        <div className="flex-[2] flex flex-col gap-10">
-          <div>
+        <div className="flex-[2] flex flex-col gap-1">
+          <div className="flex items-center gap-3  text-black">
             {" "}
-            <Link to="/">
+            <Link to="/" className="hidden">
               <img
                 src={logo}
                 alt=""
-                className="w-[200px] lg:w-[400px] h-[70px] cursor-pointer bg-white"
+                className=" size-28   cursor-pointer bg-white"
               />
             </Link>
+            <p className="text-3xl font-montserrat text-white font-bold mb-8 ">
+              <span className="">Saujnya</span> Diagnostics <br />
+              <span className="text-base font-normal leading-none bg-white px-4 text-red-600">
+                Your Health, Our Commitment"
+              </span>
+            </p>
           </div>
-          <p>
+          <p className="pr-28">
             Our Clinic has grown to provide a world class facility for the
             clinic advanced restorative.
           </p>
-          <p>
+          <p className="pr-28 mb-8">
             We are among the most qualified implant providers in the AUS with
             over 30 years of quality training and experience.
           </p>

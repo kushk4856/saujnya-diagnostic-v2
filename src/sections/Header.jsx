@@ -26,21 +26,20 @@ export default function Header() {
 
       <div className="navbar  bg-white flex justify-between lg:justify-center items-center  px-5 shadow-xl">
         {/* //////////logo  */}
-        <div className="">
+        <div className="flex lg:flex-2 items-center lg:mr-4 gap-4">
           <Link to="/">
-            <img
-              src={logo}
-              alt=""
-              className="w-[200px] lg:w-[400px] h-[70px] cursor-pointer"
-            />
+            <img src={logo} alt="" className=" w-[100px] cursor-pointer" />
           </Link>
+          <p className="  font-bold text-red-600 text-3xl ">
+            <span className="text-primary">Saujnya </span>Diagnostic
+          </p>
         </div>
         {/* //////////////////menue */}
         <div className="hamburger lg:hidden">
           <i className="ri-menu-line text-[37px] text-primary"></i>
         </div>
         {/* //////////////serchbar  */}
-        <div className="hidden lg:flex w-full h-full">
+        <div className="hidden lg:flex lg:flex-1 w-full h-full">
           <SearchBar />
         </div>
 

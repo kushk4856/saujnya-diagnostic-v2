@@ -9,7 +9,7 @@ export default {
         openSans: ["Open Sans", "sans-serif"],
       },
       colors: {
-        primary: "#652F91",
+        primary: "#288de9",
       },
     },
   },

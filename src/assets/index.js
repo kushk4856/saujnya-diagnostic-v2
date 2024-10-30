@@ -1,4 +1,4 @@
-import logo from "../assets/images/logo.svg";
+import logo from "../assets/images/logo_new.webp";
 import banner1 from "../assets/images/banner-1.webp";
 import banner2 from "../assets/images/banner-2.webp";
 import banner3 from "../assets/images/banner-3.webp";

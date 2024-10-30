@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
   return (
     <div
       ref={ref}
-      className="why_choose px-24 py-9 bg-[#8080802b]"
+      className="why_choose px-24 py-9 bg-[#e9eff0]"
       id="why_choose"
     >
       <div className="inner_choose">

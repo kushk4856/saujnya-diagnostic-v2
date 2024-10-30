@@ -20,14 +20,14 @@ const Modal = ({ isOpen, onClose, title, children }) => {
     <>
       {/* Backdrop with fade */}
       <div
-        className={`fixed inset-0 bg-black/30 transition-opacity duration-500 ${
+        className={`fixed inset-0 z-[99] bg-black/30 transition-opacity duration-500 ${
           isOpen ? "opacity-100" : "opacity-0"
         }`}
         onClick={onClose}
       />
 
       {/* Modal Container */}
-      <div className="fixed inset-0 z-50 overflow-y-auto">
+      <div className="fixed inset-0 z-[999] overflow-y-auto">
         <div className="flex min-h-full items-center justify-center p-4">
           {/* Modal Content with fade and slide */}
           <div
@@ -54,7 +54,7 @@ const Modal = ({ isOpen, onClose, title, children }) => {
             <div className="flex flex-shrink-0 justify-center  p-6">
               <button
                 onClick={onClose}
-                className="rounded-full text-xl bg-primary px-6 py-2 text-white hover:bg-primary focus:outline-none"
+                className="rounded-full text-xl bg-primary px-14 py-2 text-white hover:bg-primary focus:outline-none"
               >
                 Submit
               </button>

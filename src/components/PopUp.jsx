@@ -25,23 +25,23 @@ const PopUp = () => {
             </div>
           </section>
           <section className="flex justify-between px-12 ">
-            <label htmlFor="name " className="text-base text-primary">
+            <label htmlFor="name " className="text-lg text-primary">
               Name
             </label>
             <input
               type="text"
               className="rounded-md border-primary text-base h-8 w-[170px]"
-              placeholder="Enter your Name"
+              placeholder="Enter Your Name"
             />
           </section>
           <section className="flex justify-between px-12 ">
-            <label htmlFor="name" className="text-base text-primary">
+            <label htmlFor="name" className="text-lg text-primary">
               Mobile No.
             </label>
             <input
               type="text"
               className="rounded-md border-primary text-base h-8 w-[170px]"
-              placeholder="Enter your Mobile No."
+              placeholder="Phone No."
             />
           </section>
 

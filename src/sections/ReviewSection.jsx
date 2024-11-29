@@ -3,7 +3,7 @@ import { reviews } from "../consonants";
 
 export default function ReviewSection() {
   return (
-    <div className="px-4 lg:px-8 py-4 lg:py-8">
+    <div className="px-4 lg:px-8 max-container py-4 lg:py-8">
       <PackageSlider showSlide={2} heading={"What Our Client Say"}>
         {reviews.map((testimonial) => (
           <ReviewCard

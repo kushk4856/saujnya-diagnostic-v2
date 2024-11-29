@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 export default function TestCard({ test }) {
   return (
-    <div className="flex flex-col  justify-center bg-white items-start gap-4 custom-shadow py-4 px-6 rounded-lg">
+    <div className="flex flex-col md:min-w-[290px]  justify-center bg-white items-start gap-2 md:gap-4 custom-shadow md:py-4 md:px-6 px-4 py-4 rounded-lg">
       <div className="offer bg-blue-900 p-2 text-white font-semibold">
         <p>59% Off</p>
       </div>
       <div>
-        <h2 className="font-openSans font-semibold text-2xl">
+        <h2 className="font-openSans font-semibold text-lg md:text-2xl">
           {test.testName}
         </h2>
       </div>
@@ -23,11 +23,11 @@ export default function TestCard({ test }) {
           ))}
         </ul>
       </div>
-      <div className="price flex justify-between items-center gap-28">
+      <div className="price flex justify-between items-center gap-4 md:gap-16">
         <Link to={`/book-test/${test.id}?name=${test.testName}`}>
           <button className=" text-green-500 px-1 py-1">know more</button>
         </Link>
-        <h2 className="text-lg font-semibold font-openSans">
+        <h2 className="md:text-lg text-base font-semibold font-openSans">
           Rs {test.price}.00
         </h2>
       </div>

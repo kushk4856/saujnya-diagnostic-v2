@@ -1,11 +1,9 @@
 import FAQAccordion from "../components/Accordion";
 import Footer from "../components/Footer";
-import PopUp from "../components/PopUp";
 import {
   Header,
   Hero,
   HealthPackage,
-  Disorder,
   CategorySection,
   Feature,
   Location,
@@ -22,14 +20,14 @@ export default function HomePage() {
       <AboutSection />
       <HealthPackage />
       <Feature />
-      <Disorder />
+      {/* <Disorder /> */}
       <CategorySection />
       <DetailSection />
       {/* -------Accordian------------ */}
       <ReviewSection />
       <FAQAccordion />
       <Location />
-      <PopUp />
+
       <Footer />
     </div>
   );

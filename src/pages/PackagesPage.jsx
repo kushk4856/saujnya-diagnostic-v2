@@ -1,11 +1,11 @@
-import React from "react";
 import { Header } from "../sections";
+import CardFilterContainer from "../components/CardFilterContainer";
 
 export default function PackagesPage() {
   return (
     <div>
       <Header />
-      <h1>Packages Page</h1>
+      <CardFilterContainer />
     </div>
   );
 }

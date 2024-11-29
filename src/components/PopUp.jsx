@@ -30,7 +30,7 @@ const PopUp = () => {
             </label>
             <input
               type="text"
-              className="rounded-md border-primary text-base h-8 w-[170px]"
+              className=" px-3 py-1 border rounded-full border-primary text-base h-8 w-[170px]"
               placeholder="Enter Your Name"
             />
           </section>
@@ -40,7 +40,7 @@ const PopUp = () => {
             </label>
             <input
               type="text"
-              className="rounded-md border-primary text-base h-8 w-[170px]"
+              className=" px-3 py-1 border rounded-full border-primary text-base h-8 w-[170px]"
               placeholder="Phone No."
             />
           </section>

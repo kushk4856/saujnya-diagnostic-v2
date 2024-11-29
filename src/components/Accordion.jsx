@@ -63,9 +63,9 @@ const FAQAccordion = () => {
           Find answers to common questions about our numerology services
         </p>
       </div>
-      <div className="flex gap-12 flex-row-reverse">
+      <div className="flex gap-12 flex-col lg:flex-row-reverse">
         {/* Accordion Section */}
-        <div className="space-y-3 md:w-[60%] sm:space-y-4">
+        <div className="space-y-3 lg:w-[60%] sm:space-y-4">
           {faqItems.map((item, index) => (
             <div
               key={index}
@@ -111,14 +111,14 @@ const FAQAccordion = () => {
             </div>
           ))}
         </div>
-        <div className="flex w-full md:w-[40%]">
+        <div className="flex w-full lg:w-[40%]">
           <div className="image_block_2 w-full">
             <div className="inner_image relative">
               <div className="patters_with_img">
                 <div className="pattern_img1"></div>
                 <div className="pattern_img2"></div>
               </div>
-              <div className="imgs flex">
+              <div className="imgs flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 px-4">
                   <div className="img_box">
                     <figure className="img mb-7">
@@ -128,21 +128,18 @@ const FAQAccordion = () => {
                         className="aboutImg"
                       />
                     </figure>
-                    {/* <div className="experience_box">
+                    <div className="experience_box hidden md:block md:min-h-[134px]">
                       <div className="inner pl-28 font-openSans  py-1 relative">
-                        <h2 className="bg-[#cecee9]">
-                          25
-                          <span>Years</span>
+                        <h2 className=" experience_box_h2 w-full text-primary">
+                          1M +
+                          <span className="text-black">Reports Generated</span>
                         </h2>
-                        <h3 className="font-montserrat">
-                          Of Experience in the Finance Service
-                        </h3>
                       </div>
-                    </div> */}
+                    </div>
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 px-4">
-                  <figure className="img pt-24 mt-4">
+                  <figure className="img lg:pt-24 mt-4">
                     <img src={aboutImg2} alt="aboutImg" className="aboutImg" />
                   </figure>
                 </div>

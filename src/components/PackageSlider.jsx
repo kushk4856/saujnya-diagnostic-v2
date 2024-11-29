@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Slider from "react-slick";
 
 import Heading from "./Heading";
@@ -27,7 +28,7 @@ export default function PackageSlider({ children, heading, showSlide = 4 }) {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -57,7 +58,7 @@ export default function PackageSlider({ children, heading, showSlide = 4 }) {
 function SampleNextArrow({ onClick }) {
   return (
     <div className="z-[50] absolute right-[-15px] top-[40%] " onClick={onClick}>
-      <div className="bg-primary hover:bg-primary/70   h-[50px] w-[50px] rounded-full grid place-items-center cursor-pointer">
+      <div className="bg-primary hover:bg-primary/70   md:size-[50px] size-[35px] rounded-full grid place-items-center cursor-pointer">
         <span>
           <i className="ri-arrow-right-s-line text-3xl text-white"></i>
         </span>
@@ -69,7 +70,7 @@ function SampleNextArrow({ onClick }) {
 function SamplePrevArrow({ onClick }) {
   return (
     <div className="z-[50] absolute left-[-15px] top-[40%] " onClick={onClick}>
-      <div className="bg-primary hover:bg-primary/50   h-[50px] w-[50px] rounded-full grid place-items-center cursor-pointer">
+      <div className="bg-primary hover:bg-primary/50   md:size-[50px] size-[35px]  rounded-full grid place-items-center cursor-pointer">
         <span>
           <i className="ri-arrow-left-s-line text-3xl text-white"></i>
         </span>

@@ -8,7 +8,6 @@ function useIntersectionObserver(options) {
     const observer = new IntersectionObserver((entries, observe) => {
       const [entry] = entries;
       setIsVisible(entry.isIntersecting);
-      console.log(entry);
       if (!entry.isIntersecting) return;
       observe.unobserve(entry.target);
     }, options);

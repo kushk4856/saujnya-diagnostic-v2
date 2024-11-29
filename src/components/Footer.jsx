@@ -31,7 +31,7 @@ export default function Footer() {
             We are among the most qualified implant providers in the AUS with
             over 30 years of quality training and experience.
           </p>
-          <p className="flex gap-8 text-white">
+          <p className="flex gap-4 lg:gap-8 text-white">
             <span className="w-[50px] h-[50px] rounded-full border-2 cursor-pointer group hover:bg-white border-white flex justify-center items-center">
               <i className="ri-facebook-box-fill text-2xl text-white group-hover:text-black"></i>
             </span>

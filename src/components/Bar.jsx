@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 
 export default function Bar({ itag, percent, time, circle, type }) {
@@ -10,7 +11,7 @@ export default function Bar({ itag, percent, time, circle, type }) {
   }, [count, percent, time]);
   return (
     <li className="col-3">
-      <div className="skill">
+      <div className="skill ml-4">
         <div className="outer">
           <div className="inner">
             <div id="number">

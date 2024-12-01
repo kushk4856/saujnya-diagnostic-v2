@@ -1,6 +1,7 @@
 import BreadCrumSection from "../components/BreadCrumSection";
 import { Header } from "../sections";
 import AboutPageDetail from "../sections/AboutPageDetail";
+import VisionAndMission from "../sections/AboutVissionMission";
 
 export default function AboutPage() {
   return (
@@ -8,6 +9,7 @@ export default function AboutPage() {
       <Header />
       <BreadCrumSection />
       <AboutPageDetail />
+      <VisionAndMission />
     </div>
   );
 }

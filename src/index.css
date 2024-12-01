@@ -275,6 +275,14 @@
   mask-size: contain;
 }
 
+.mask_img {
+  mask-image: url("./assets/images/mask-about.svg");
+  -webkit-mask-image: url(./assets/images/mask-about.svg);
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+}
+
 @layer components {
   .max-container {
     max-width: 1340px;

@@ -224,6 +224,27 @@
   background-repeat: no-repeat;
 }
 
+.contact_card {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact_card::before {
+  position: absolute;
+  content: "";
+  top: 101%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.5s ease;
+  background-size: 101% 101%;
+  background-color: #288de9;
+  transition: all 0.4s ease-in-out !important;
+  border-radius: 500px 500px 0 0;
+  z-index: -2;
+}
+
 @keyframes bar1 {
   100% {
     stroke-dashoffset: 165.2;
@@ -294,6 +315,10 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
       rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
       rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  }
+
+  .custom-shadow-2 {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 
   .disorder-shadow {

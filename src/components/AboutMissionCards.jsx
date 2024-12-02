@@ -1,8 +1,8 @@
 const AboutMissionCards = () => {
   return (
-    <div className={`p-6  rounded-3xl  bg-primary  w-[300px]`}>
-      <div className=" items-center justify-center flex-col flex">
-        <div>
+    <div className={`   p-3  w-[33.33%]`}>
+      <div className=" items-center p-10   justify-center rounded-[40px]  bg-white  shadow-md flex-col flex">
+        <div className="mb-8 w-full flex flex-col justify-center items-center border-b-gray-50-500 border-b-[1px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="81"
@@ -35,9 +35,13 @@ const AboutMissionCards = () => {
               </clipPath>
             </defs>
           </svg>
+          <h3 className="my-4 text-xl font-semibold">Our Mission</h3>
         </div>
 
-        <h3>Our Mission</h3>
+        <p className="text-center lg:text-lg text-para font-openSans">
+          Our mission is to provide compassionate, high-quality dental care,
+          promoting healthy smiles through personalized treatments and patient.
+        </p>
       </div>
     </div>
   );

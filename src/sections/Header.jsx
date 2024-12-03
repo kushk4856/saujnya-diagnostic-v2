@@ -1,7 +1,6 @@
 import { logo } from "../assets";
 import SearchBar from "../components/SearchBar";
-import { cta } from "../consonants";
-import CtaButton from "../components/CtaButton";
+
 import { Navigation } from "../components";
 import { Link } from "react-router-dom";
 
@@ -51,11 +50,7 @@ export default function Header() {
         </div>
 
         {/* ///////////CTA  */}
-        <div className=" hidden  lg:flex justify-between items-center md:gap-4">
-          {cta.map((el) => (
-            <CtaButton key={el.type}>{el.type}</CtaButton>
-          ))}
-        </div>
+        <div className=" hidden  lg:flex justify-between items-center md:gap-4"></div>
       </div>
 
       {/* -----drop-nav */}

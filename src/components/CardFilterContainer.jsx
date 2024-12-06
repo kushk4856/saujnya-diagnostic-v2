@@ -33,6 +33,20 @@ const CardFilterContainer = () => {
     setCards(filteredCards);
   };
 
+  const getIndexModValue = () => {
+    const width = window.innerWidth;
+
+    if (width <= 440) {
+      return 1; // for screens smaller than or equal to 440px
+    } else if (width <= 1024) {
+      return 2; // for screens between 441px and 1024px
+    } else {
+      return 3; // for larger screens (desktops)
+    }
+  };
+
+  const modValue = getIndexModValue();
+
   return (
     <div className="p-6 max-container h-screen mx-auto">
       <div className="flex justify-center space-x-4 mb-6">
@@ -56,7 +70,7 @@ const CardFilterContainer = () => {
           <div
             key={card.id}
             className={`
-               transition-all duration-500 ease-in-out
+               transition-all lg:w-[33.33%] w-full md:w-1/2 duration-500 ease-in-out
               absolute transform 
               ${
                 index === 0
@@ -67,9 +81,9 @@ const CardFilterContainer = () => {
             style={{
               top: 0,
               left: 0,
-              width: "calc(33.3% - 1rem)", // Adjustment of grid
-              transform: `translate(${(index % 3) * 100}%, ${
-                Math.floor(index / 3) * 100
+
+              transform: `translate(${(index % modValue) * 100}%, ${
+                Math.floor(index / modValue) * 100
               }%)`,
               transition: "transform 0.5s ease-in-out, scale 0.5s ease-in-out",
             }}

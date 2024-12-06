@@ -1,4 +1,5 @@
 // import btnArrow from "../assets/images/btn-arrow.png";
+import { NavLink } from "react-router-dom";
 import aboutImg1 from "../assets/images/about-1.jpg";
 import aboutImg2 from "../assets/images/about-2.jpg";
 
@@ -33,10 +34,13 @@ const AboutSection = () => {
               </ul>
             </div>
             <div className="about_btn py-2 text-center lg:text-justify">
-              <a className="theme_btn  font-montserrat " href="#">
+              <NavLink
+                to="/test-package"
+                className="theme_btn  font-montserrat "
+              >
                 Get In Touch
                 {/* <img src={btnArrow} alt="" /> */}
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>

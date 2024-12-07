@@ -6,7 +6,7 @@ export default function SearchBar() {
   const { searchQuery, setSearchQuery } = useTests();
 
   return (
-    <div className="relative w-full">
+    <div className="relative lg:w-1/2 w-full">
       <div className="flex  bg-white px-4 items-center justify-between border-primary  m-3 border-[1px] rounded-3xl overflow-hidden">
         <input
           type="text"

@@ -75,6 +75,149 @@ const testCard = [
   },
 ];
 
+const blogCard = [
+  {
+    id: "blog1",
+    bannerImg:
+      "https://saujnyadiagnostic.com/images/Full%20Body%20Checkup%20[Standard].webp",
+    title: "Full Body Checkup Package Blog",
+    para1:
+      "Our Garden are designed and maintained to the highest standards, with state-of-the-art equipment. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, The Extremes sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+    qote: "If you’re looking for a rewarding career and the chanmake an impact, you’ve come to the right place. we will transform your business through our techniques!",
+    para2:
+      "Quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia",
+    methods: {
+      title: "Methods of the recruitment",
+      para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+
+      detail1: {
+        img: "https://saujnyadiagnostic.com/images/Full%20Body%20Checkup%20[Standard].webp",
+        points: ["demo1", "demo2"],
+      },
+      detail2: {
+        img: "https://saujnyadiagnostic.com/images/Liver%20Profile.webp",
+        points: ["demo1", "demo2"],
+      },
+    },
+  },
+  {
+    id: "blog2",
+    bannerImg: "https://saujnyadiagnostic.com/images/Kidney%20Profile.webp",
+    title: "Kideny Profile Test Blog",
+    para1:
+      "Our Garden are designed and maintained to the highest standards, with state-of-the-art equipment. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, The Extremes sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+    qote: "If you’re looking for a rewarding career and the chanmake an impact, you’ve come to the right place. we will transform your business through our techniques!",
+    para2:
+      "Quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia",
+    methods: {
+      title: "Methods of the recruitment",
+      para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+
+      detail1: {
+        img: "https://saujnyadiagnostic.com/images/Full%20Body%20Checkup%20[Standard].webp",
+        points: ["demo1", "demo2"],
+      },
+      detail2: {
+        img: "https://saujnyadiagnostic.com/images/Liver%20Profile.webp",
+        points: ["demo1", "demo2"],
+      },
+    },
+  },
+  {
+    id: "blog3",
+    bannerImg: "https://saujnyadiagnostic.com/images/ANC%20Profile.webp",
+    title: "ANC Full Profile Guide For Couples",
+    para1:
+      "Our Garden are designed and maintained to the highest standards, with state-of-the-art equipment. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, The Extremes sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+    qote: "If you’re looking for a rewarding career and the chanmake an impact, you’ve come to the right place. we will transform your business through our techniques!",
+    para2:
+      "Quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia",
+    methods: {
+      title: "Methods of the recruitment",
+      para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+
+      detail1: {
+        img: "https://saujnyadiagnostic.com/images/Full%20Body%20Checkup%20[Standard].webp",
+        points: ["demo1", "demo2"],
+      },
+      detail2: {
+        img: "https://saujnyadiagnostic.com/images/Liver%20Profile.webp",
+        points: ["demo1", "demo2"],
+      },
+    },
+  },
+  {
+    id: "blog4",
+    bannerImg: "https://saujnyadiagnostic.com/images/Thyroid%20Profile.webp",
+    title: "Thyroid Test Packages and Dieases",
+    para1:
+      "Our Garden are designed and maintained to the highest standards, with state-of-the-art equipment. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, The Extremes sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+    qote: "If you’re looking for a rewarding career and the chanmake an impact, you’ve come to the right place. we will transform your business through our techniques!",
+    para2:
+      "Quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia",
+    methods: {
+      title: "Methods of the recruitment",
+      para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+
+      detail1: {
+        img: "https://saujnyadiagnostic.com/images/Full%20Body%20Checkup%20[Standard].webp",
+        points: ["demo1", "demo2"],
+      },
+      detail2: {
+        img: "https://saujnyadiagnostic.com/images/Liver%20Profile.webp",
+        points: ["demo1", "demo2"],
+      },
+    },
+  },
+  {
+    id: "blog5",
+    bannerImg: "https://saujnyadiagnostic.com/images/Liver%20Profile.webp",
+    title: "Liver Related Dieases and Packages",
+    para1:
+      "Our Garden are designed and maintained to the highest standards, with state-of-the-art equipment. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, The Extremes sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+    qote: "If you’re looking for a rewarding career and the chanmake an impact, you’ve come to the right place. we will transform your business through our techniques!",
+    para2:
+      "Quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia",
+    methods: {
+      title: "Methods of the recruitment",
+      para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+
+      detail1: {
+        img: "https://saujnyadiagnostic.com/images/Full%20Body%20Checkup%20[Standard].webp",
+        points: ["demo1", "demo2"],
+      },
+      detail2: {
+        img: "https://saujnyadiagnostic.com/images/Liver%20Profile.webp",
+        points: ["demo1", "demo2"],
+      },
+    },
+  },
+  {
+    id: "blog6",
+    bannerImg:
+      "https://saujnyadiagnostic.com/images/Full%20Body%20Checkup[Basic].webp",
+    title: "Full Body Checkup Basic Package Details",
+    para1:
+      "Our Garden are designed and maintained to the highest standards, with state-of-the-art equipment. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, The Extremes sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+    qote: "If you’re looking for a rewarding career and the chanmake an impact, you’ve come to the right place. we will transform your business through our techniques!",
+    para2:
+      "Quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia",
+    methods: {
+      title: "Methods of the recruitment",
+      para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+
+      detail1: {
+        img: "https://saujnyadiagnostic.com/images/Full%20Body%20Checkup%20[Standard].webp",
+        points: ["demo1", "demo2"],
+      },
+      detail2: {
+        img: "https://saujnyadiagnostic.com/images/Liver%20Profile.webp",
+        points: ["demo1", "demo2"],
+      },
+    },
+  },
+];
+
 const reviews = [
   {
     content:
@@ -160,4 +303,4 @@ const progressBarData = [
   },
 ];
 
-export { cta, testCard, category, progressBarData, reviews };
+export { cta, testCard, category, progressBarData, reviews, blogCard };

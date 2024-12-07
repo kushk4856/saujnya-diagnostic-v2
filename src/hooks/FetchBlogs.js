@@ -1,11 +1,11 @@
 import { useEffect, useReducer } from "react";
 
-const BASE_URL = "https://kushk4856.github.io/test-packages/tests.json";
+const BASE_URL = "https://kushk4856.github.io/test-packages/blog.json";
 
 const initialState = {
-  tests: [],
+  blogs: [],
   isLoading: false,
-  currentTest: {},
+  currentBlog: {},
   error: "",
 };
 
@@ -14,8 +14,8 @@ function reducer(state, action) {
     case "loading":
       return { ...state, isLoading: true };
 
-    case "test/loaded":
-      return { ...state, isLoading: false, currentTest: action.payload };
+    case "blog/loaded":
+      return { ...state, isLoading: false, currentBlog: action.payload };
 
     case "rejected":
       return {
@@ -29,19 +29,20 @@ function reducer(state, action) {
   }
 }
 
-function useTestFetch(id) {
-  const [{ tests, isLoading, currentTest, error }, dispatch] = useReducer(
+function useFetchBlog(id) {
+  // eslint-disable-next-line no-unused-vars
+  const [{ blogs, isLoading, currentBlog, error }, dispatch] = useReducer(
     reducer,
     initialState
   );
   useEffect(() => {
-    async function fetchTests() {
+    async function fetchBlogs() {
       dispatch({ type: "loading" });
       try {
         const res = await fetch(`${BASE_URL}`);
         const data = await res.json();
 
-        dispatch({ type: "test/loaded", payload: data.tests[id] });
+        dispatch({ type: "blog/loaded", payload: data.blogs[id] });
       } catch {
         dispatch({
           type: "rejected",
@@ -49,10 +50,10 @@ function useTestFetch(id) {
         });
       }
     }
-    fetchTests();
+    fetchBlogs();
   }, [id]);
 
-  return [currentTest];
+  return [currentBlog];
 }
 
-export { useTestFetch };
+export { useFetchBlog };

@@ -1,17 +1,30 @@
 import { useState } from "react";
 import OsmoticTestingCard from "./TestCardPackage";
+import { Link } from "react-router-dom";
 
 const initialCards = [
-  { id: 1, name: "Technology", category: "Work" },
-  { id: 2, name: "Cooking", category: "Hobby" },
-  { id: 3, name: "Fitness", category: "Health" },
-  { id: 4, name: "Programming", category: "Work" },
-  { id: 5, name: "Photography", category: "Hobby" },
-  { id: 6, name: "Meditation", category: "Health" },
-  { id: 7, name: "Design", category: "Work" },
-  { id: 8, name: "Gardening", category: "Hobby" },
-  { id: 9, name: "Nutrition", category: "Health" },
-  { id: 10, name: "Data Science", category: "Work" },
+  {
+    id: "Covid severty profile",
+    name: "Covid severty profile",
+    category: "Family Care",
+  },
+  { id: "Anemia profile", name: "Anemia profile", category: "Fitness Care" },
+  {
+    id: "Infection profile",
+    name: "Infection profile",
+    category: "Complete Care",
+  },
+  { id: "Obesity Pannel", name: "Obesity Pannel", category: "Family Care" },
+  { id: "Fever Panel", name: "Photography", category: "Fitness Care" },
+  {
+    id: "Infertility Female profile",
+    name: "Infertility Female profile",
+    category: "Health",
+  },
+  { id: 7, name: "Design", category: "Family Care" },
+  { id: 8, name: "Gardening", category: "Fitness Care" },
+  { id: 9, name: "Nutrition", category: "Complete Care" },
+  { id: 10, name: "Data Science", category: "Family Care" },
 ];
 
 const CardFilterContainer = () => {
@@ -35,6 +48,7 @@ const CardFilterContainer = () => {
 
   const getIndexModValue = () => {
     const width = window.innerWidth;
+    console.log(width);
 
     if (width <= 440) {
       return 1; // for screens smaller than or equal to 440px
@@ -57,7 +71,7 @@ const CardFilterContainer = () => {
             className={`px-4 py-2 rounded transition-colors ${
               selectedCategory === category
                 ? "bg-blue-600 text-white"
-                : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+                : "bg-gray-200 text-gray-800 hover:bg-blue-600 hover:text-white"
             }`}
           >
             {category}
@@ -88,7 +102,9 @@ const CardFilterContainer = () => {
               transition: "transform 0.5s ease-in-out, scale 0.5s ease-in-out",
             }}
           >
-            <OsmoticTestingCard name={card.name} category={card.category} />
+            <Link to={`/book-test/${card.id}?name=${card.name}`}>
+              <OsmoticTestingCard name={card.name} category={card.category} />
+            </Link>
           </div>
         ))}
       </div>

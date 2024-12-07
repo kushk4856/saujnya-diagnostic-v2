@@ -1,5 +1,6 @@
 import { logo } from "../assets";
 import SearchBar from "../components/SearchBar";
+import { LuPhoneCall } from "react-icons/lu";
 
 import { Navigation } from "../components";
 import { Link } from "react-router-dom";
@@ -50,7 +51,11 @@ export default function Header() {
         </div>
 
         {/* ///////////CTA  */}
-        <div className=" hidden  lg:flex justify-between items-center md:gap-4"></div>
+        <div className=" hidden  lg:flex justify-between items-center md:gap-4">
+          <div className="flex">
+            <LuPhoneCall />
+          </div>
+        </div>
       </div>
 
       {/* -----drop-nav */}

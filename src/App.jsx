@@ -8,6 +8,8 @@ import {
   ContactPage,
   BookTest,
 } from "./pages";
+import BlogPage from "./pages/BlogPage";
+import BlogDetailPage from "./pages/BlogDetailPage";
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
             <Route path="test-package" element={<PackagesPage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="contact" element={<ContactPage />} />
+            <Route path="blog" element={<BlogPage />} />
             <Route path="book-test/:id" element={<BookTest />} />
+            <Route path="blog-detail/:blogId" element={<BlogDetailPage />} />
           </Routes>
         </BrowserRouter>
       </TestProvider>

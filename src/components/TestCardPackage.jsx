@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 // import { Beaker } from "lucide-react";
-import { HiMiniBeaker } from "react-icons/hi2";
-import img from "../assets/images/test-1.jpg";
+
+// import img from "../assets/images/test-1.jpg";
 
 const TestCardPackage = ({ name }) => {
   return (
     <div className="max-w-lg rounded-lg m-4 shadow-lg bg-white p-6 space-y-6">
       <div className="relative">
         <img
-          src={img}
+          src="https://saujnyadiagnostic.com/images/Kidney%20Profile.webp"
           alt="Scientist examining blue liquid in flask"
           className="w-full rounded-lg object-cover"
         />
@@ -18,8 +18,10 @@ const TestCardPackage = ({ name }) => {
           </div>
         </div> */}
         <div className="card_icon flex justify-center items-center md:p-4 lg:p-8 absolute right-3 md:top-[75%] lg:top-[80%]">
-          <div className=" mask_bg  bg-primary  "></div>
-          <HiMiniBeaker className="text-white z-20" size={44} />
+          <div className=" mask_bg  bg-emerald-400 text-lg  "></div>
+          <div className="off_conainer font-bold text-2xl z-40 text-white">
+            50% <span className="text-[12px] text-black">OFF</span>
+          </div>
         </div>
       </div>
 
@@ -33,9 +35,16 @@ const TestCardPackage = ({ name }) => {
           discovering that a family member has a condition.
         </p>
 
-        <div className="flex items-center gap-2">
-          <span className="text-emerald-400 font-medium">Includes</span>
-          <span className="font-semibold">20 tests</span>
+        <div className="flex items-center justify-between">
+          <div className="">
+            <span className=" ">
+              <span className="text-primary font-bold">20 +</span> Parameters
+            </span>
+            {/* <span className="font-semibold ml-3">20 tests</span> */}
+          </div>
+          <button className="px-6 py-2 text-white bg-primary rounded-full">
+            Book now
+          </button>
         </div>
       </div>
     </div>

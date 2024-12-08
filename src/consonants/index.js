@@ -17,6 +17,7 @@ const testCard = [
       para: "The ABO blood group test is a test used to determine an individual's blood type. It is the most common way of categorizing different types of blood and is determined by the presence of two different antigens, A and B, on the surface of red blood cells. The test is used to match blood for transfusions and for other medical purposes, such as determining paternity. There are four different ABO blood types: A, B, AB, and O. Additionally, there is a fifth type, known as Rh type, which is determined by the presence of an additional antigen, the Rh factor.",
     },
     id: "Covid severty profile",
+    category: "Kidney",
   },
   {
     testName: "Obesity Pannel",
@@ -28,6 +29,7 @@ const testCard = [
       para: "The ABO blood group test is a test used to determine an individual's blood type. It is the most common way of categorizing different types of blood and is determined by the presence of two different antigens, A and B, on the surface of red blood cells. The test is used to match blood for transfusions and for other medical purposes, such as determining paternity. There are four different ABO blood types: A, B, AB, and O. Additionally, there is a fifth type, known as Rh type, which is determined by the presence of an additional antigen, the Rh factor.",
     },
     id: "Obesity Pannel",
+    category: "Thyroid Profile",
   },
   {
     testName: "Fever Panel",
@@ -39,6 +41,7 @@ const testCard = [
       para: "The ABO blood group test is a test used to determine an individual's blood type. It is the most common way of categorizing different types of blood and is determined by the presence of two different antigens, A and B, on the surface of red blood cells. The test is used to match blood for transfusions and for other medical purposes, such as determining paternity. There are four different ABO blood types: A, B, AB, and O. Additionally, there is a fifth type, known as Rh type, which is determined by the presence of an additional antigen, the Rh factor.",
     },
     id: "Fever Panel",
+    category: "Infection Profile",
   },
   {
     testName: "Infection profile",
@@ -50,9 +53,10 @@ const testCard = [
       para: "The ABO blood group test is a test used to determine an individual's blood type. It is the most common way of categorizing different types of blood and is determined by the presence of two different antigens, A and B, on the surface of red blood cells. The test is used to match blood for transfusions and for other medical purposes, such as determining paternity. There are four different ABO blood types: A, B, AB, and O. Additionally, there is a fifth type, known as Rh type, which is determined by the presence of an additional antigen, the Rh factor.",
     },
     id: "Infection profile",
+    category: "Liver Profile",
   },
   {
-    testName: "Infertility Female profile",
+    testName: "Hormones Profile",
     parameters: "15 ",
     tests: ["CBC", "Iron", "KFT", "HBA1c"],
     price: 999,
@@ -60,7 +64,8 @@ const testCard = [
       heading: "title",
       para: "The ABO blood group test is a test used to determine an individual's blood type. It is the most common way of categorizing different types of blood and is determined by the presence of two different antigens, A and B, on the surface of red blood cells. The test is used to match blood for transfusions and for other medical purposes, such as determining paternity. There are four different ABO blood types: A, B, AB, and O. Additionally, there is a fifth type, known as Rh type, which is determined by the presence of an additional antigen, the Rh factor.",
     },
-    id: "Infertility Female profile",
+    id: "Hormones Profile",
+    category: "Infection Profile",
   },
   {
     testName: "Anemia profile",
@@ -72,6 +77,7 @@ const testCard = [
       para: "The ABO blood group test is a test used to determine an individual's blood type. It is the most common way of categorizing different types of blood and is determined by the presence of two different antigens, A and B, on the surface of red blood cells. The test is used to match blood for transfusions and for other medical purposes, such as determining paternity. There are four different ABO blood types: A, B, AB, and O. Additionally, there is a fifth type, known as Rh type, which is determined by the presence of an additional antigen, the Rh factor.",
     },
     id: "Anemia profile",
+    category: "Thyroid Profile",
   },
 ];
 
@@ -303,4 +309,6 @@ const progressBarData = [
   },
 ];
 
-export { cta, testCard, category, progressBarData, reviews, blogCard };
+const nav = ["Home", "Health Packages", "About Us", "Contact Us", "Blogs"];
+
+export { cta, testCard, category, progressBarData, reviews, blogCard, nav };

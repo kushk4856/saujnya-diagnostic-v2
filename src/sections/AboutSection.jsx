@@ -14,22 +14,33 @@ const AboutSection = () => {
             <div className="title_content mb-2 lg:mb-6">
               <span>Laboratory</span>
               <h2 className="font-bold text-2xl lg:text-[48px] font-palanquin leading-normal">
-                We Provide Reliable & High- Quality Clinical Service
+                We Provide Reliable & High- Quality Pathology Service
               </h2>
             </div>
             <div className="text_box lg:mb-11">
-              <p className="lg:mb-7 mb-4 font-medium lg:text-base text-sm text-[#6A6A6A] leading-[26px] font-openSans">
-                Laboratory We Provide Reliable & High- Quality Clinical Service
-                Welcome to the Labout Rare Chemistry Research Documentation
-                Center, a hub exploration & discovery in the realm of uncommon &
-                extraordinary chemical phenomena.
+              <p className="lg:mb-2 mb-2 font-medium lg:text-base text-sm text-[#6A6A6A] leading-[26px] font-openSans">
+                Welcome to Saujnya Diagnostic, a state-of-the-art medical lab
+                specializing in accurate and reliable diagnostic testing. We
+                analyze blood, urine, tissues, and more, covering all pathology
+                categories like Hematology, Immunology, Microbiology, Molecular
+                Testing, and Biochemistry.
+              </p>
+              <p className="lg:mb-2 mb-2 font-medium lg:text-base text-sm text-[#6A6A6A] leading-[26px] font-openSans">
+                With advanced technology and skilled professionals, we ensure
+                precise and timely results. Located in Uttam Nagar, our
+                diagnostic center is known for exceptional service and expert
+                pathologists.
+              </p>
+              <p className="lg:mb-4 mb-4 font-medium lg:text-base text-sm text-[#6A6A6A] leading-[26px] font-openSans">
+                Choose Saujnya Diagnostic for trusted and efficient healthcare
+                support.
               </p>
               <ul className="list_style_one  list-none">
                 <li className="font-montserrat about_list_style">
-                  Modify the theming of the prebuilt automation platform
+                  Choose the most suitable diagnostic packages
                 </li>
                 <li className="font-montserrat about_list_style">
-                  Override the default strings for any element
+                  Receive detailed and accurate reports
                 </li>
               </ul>
             </div>

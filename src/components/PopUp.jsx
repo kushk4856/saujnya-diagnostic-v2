@@ -1,17 +1,16 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
 import Modal from "./ModalTEmplate";
 import bannerPopup from "../assets/images/banner-popup-1.png";
 
-const PopUp = () => {
-  const [isOpen, setIsOpen] = useState(true);
+const PopUp = ({ isOpen, setIsOpen }) => {
   return (
-    <div className="p-4">
-      <button
+    <div className="">
+      {/* <button
         onClick={() => setIsOpen(true)}
         className="button-gradient rounded px-4 py-2 text-red-600"
       >
         Privacy & Policy
-      </button>
+      </button> */}
 
       <Modal
         isOpen={isOpen}

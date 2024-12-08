@@ -1,7 +1,8 @@
+import { useState } from "react";
 import FAQAccordion from "../components/Accordion";
-import Footer from "../components/Footer";
+import PopUp from "../components/PopUp";
+
 import {
-  Header,
   Hero,
   HealthPackage,
   CategorySection,
@@ -13,12 +14,13 @@ import DetailSection from "../sections/DetailSection";
 import ReviewSection from "../sections/ReviewSection";
 
 export default function HomePage() {
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <div className="overflow-hidden">
-      <Header />
+      <PopUp isOpen={isOpen} setIsOpen={setIsOpen} />
       <Hero />
       <AboutSection />
-      <HealthPackage />
+      <HealthPackage isOpen={isOpen} setIsOpen={setIsOpen} />
       <Feature />
       {/* <Disorder /> */}
       <CategorySection />
@@ -27,8 +29,6 @@ export default function HomePage() {
       <ReviewSection />
       <FAQAccordion />
       <Location />
-
-      <Footer />
     </div>
   );
 }

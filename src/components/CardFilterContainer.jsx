@@ -1,45 +1,18 @@
 import { useState } from "react";
 import OsmoticTestingCard from "./TestCardPackage";
 import { Link } from "react-router-dom";
-
-const initialCards = [
-  {
-    id: "Covid severty profile",
-    name: "Covid severty profile",
-    category: "Family Care",
-  },
-  { id: "Anemia profile", name: "Anemia profile", category: "Fitness Care" },
-  {
-    id: "Infection profile",
-    name: "Infection profile",
-    category: "Complete Care",
-  },
-  { id: "Obesity Pannel", name: "Obesity Pannel", category: "Family Care" },
-  { id: "Fever Panel", name: "Photography", category: "Fitness Care" },
-  {
-    id: "Infertility Female profile",
-    name: "Infertility Female profile",
-    category: "Health",
-  },
-  { id: 7, name: "Design", category: "Family Care" },
-  { id: 8, name: "Gardening", category: "Fitness Care" },
-  { id: 9, name: "Nutrition", category: "Complete Care" },
-  { id: 10, name: "Data Science", category: "Family Care" },
-];
+import { testCard } from "../consonants";
 
 const CardFilterContainer = () => {
-  const [cards, setCards] = useState(initialCards);
+  const [cards, setCards] = useState(testCard);
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = [
-    "All",
-    ...new Set(initialCards.map((card) => card.category)),
-  ];
+  const categories = ["All", ...new Set(testCard.map((card) => card.category))];
 
   const handleFilter = (category) => {
     setSelectedCategory(category);
 
-    const filteredCards = initialCards.filter(
+    const filteredCards = testCard.filter(
       (card) => category === "All" || card.category === category
     );
 
@@ -48,7 +21,6 @@ const CardFilterContainer = () => {
 
   const getIndexModValue = () => {
     const width = window.innerWidth;
-    console.log(width);
 
     if (width <= 440) {
       return 1; // for screens smaller than or equal to 440px
@@ -62,7 +34,7 @@ const CardFilterContainer = () => {
   const modValue = getIndexModValue();
 
   return (
-    <div className="p-6 max-container h-screen mx-auto">
+    <div className="p-6 max-container h-[1200px] mx-auto">
       <div className="flex justify-center space-x-4 mb-6">
         {categories.map((category) => (
           <button
@@ -103,7 +75,10 @@ const CardFilterContainer = () => {
             }}
           >
             <Link to={`/book-test/${card.id}?name=${card.name}`}>
-              <OsmoticTestingCard name={card.name} category={card.category} />
+              <OsmoticTestingCard
+                name={card.testName}
+                category={card.category}
+              />
             </Link>
           </div>
         ))}

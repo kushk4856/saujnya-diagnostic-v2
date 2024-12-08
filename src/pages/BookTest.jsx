@@ -1,9 +1,6 @@
 import { useParams, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-
-import { Header } from "../sections";
 import { useTestFetch } from "../hooks/FetchTests";
-import Footer from "../components/Footer";
 
 export default function BookTest() {
   const { id } = useParams();
@@ -16,7 +13,6 @@ export default function BookTest() {
 
   return (
     <div>
-      <Header />
       <div className="main flex items-start p-10 gap-4">
         <div className="test-detail w-full pl-10 h-[100vh] ">
           <div className="test-img ">
@@ -65,8 +61,6 @@ export default function BookTest() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

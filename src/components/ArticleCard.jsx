@@ -28,7 +28,7 @@ const ArticleCard = ({ blog }) => {
         </div>
 
         {/* Title */}
-        <Link to={`/blog-detail/${blog.id}`}>
+        <Link to={`/blog-detail/${blog.id}?name=${blog.methods.title}`}>
           <h2 className="text-2xl font-openSans font-bold text-gray-800">
             {blog.title}
           </h2>

@@ -5,7 +5,7 @@ const BASE_URL = "https://kushk4856.github.io/test-packages/blog.json";
 const initialState = {
   blogs: [],
   isLoading: false,
-  currentBlog: {},
+  currentBlog: null,
   error: "",
 };
 
@@ -42,18 +42,22 @@ function useFetchBlog(id) {
         const res = await fetch(`${BASE_URL}`);
         const data = await res.json();
 
-        dispatch({ type: "blog/loaded", payload: data.blogs[id] });
+        if (data.blogs && data.blogs[id]) {
+          dispatch({ type: "blog/loaded", payload: data.blogs[id] });
+        } else {
+          dispatch({ type: "rejected", payload: "Blog not found" });
+        }
       } catch {
         dispatch({
           type: "rejected",
-          payload: "There was an error loading cities...",
+          payload: "There was an error loading blog...",
         });
       }
     }
     fetchBlogs();
   }, [id]);
 
-  return [currentBlog];
+  return [currentBlog, isLoading, error];
 }
 
 export { useFetchBlog };

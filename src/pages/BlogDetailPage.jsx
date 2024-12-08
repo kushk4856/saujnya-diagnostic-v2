@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import BreadCrumSection from "../components/BreadCrumSection";
 import BlogImg from "../assets/images/blog-bg.webp";
 import { useParams } from "react-router-dom";
@@ -6,17 +7,42 @@ import { FaUserEdit } from "react-icons/fa";
 import { FaComments } from "react-icons/fa";
 import { FaFolderOpen } from "react-icons/fa";
 import { BiSolidQuoteLeft } from "react-icons/bi";
+import { FaCheck } from "react-icons/fa";
+import { useEffect } from "react";
+
+import RecentPosts from "../components/RecentPosts";
 
 const BlogDetailPage = () => {
   const { blogId } = useParams();
-  console.log(blogId);
-  const [currentBlog] = useFetchBlog(blogId);
-  console.log(currentBlog);
+  const [currentBlog, isLoading, error] = useFetchBlog(blogId);
+
+  useEffect(() => {
+    if (!blogId) {
+      console.error("Invalid blogId provided");
+      return;
+    }
+    // Proceed with data fetching
+  }, [blogId]);
+
+  if (isLoading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
+
+  // Safeguard against undefined properties
+  const {
+    bannerImg,
+    para1,
+    qote,
+    methods = {}, // Default to an empty object
+    detail1 = {}, // Default to an empty object
+  } = currentBlog || {}; // Default to an empty object in case currentBlog is null
+  if (!currentBlog && !isLoading) return <p>No blog found</p>;
+
+  console.log(currentBlog.methods.detail1.points);
 
   return (
     <div>
       <BreadCrumSection bgImg={BlogImg} />
-      <div className="max-container py-8">
+      <div className="max-w-[1200px] flex gap-10 m-auto py-8">
         <div className="left_section w-2/3">
           <div className="Blog_banner">
             <div className="blogImg">
@@ -48,7 +74,59 @@ const BlogDetailPage = () => {
                 {currentBlog.qote}
               </p>
             </div>
+
+            <h3 className="title_method font-bold text-3xl my-5 font-openSans">
+              {currentBlog.methods.title}
+            </h3>
+            <p className=" text-base text-para mb-5">
+              {currentBlog.methods.para}
+            </p>
+
+            <div className="categoriesDetail flex ">
+              <div className="max-w-[48%]  m-auto">
+                <div className="imgContainer custom-shadow rounded-md my-4">
+                  <img
+                    src={currentBlog.methods.detail1.img}
+                    className="w-full h-full object-cover"
+                    alt=""
+                  />
+                </div>
+                {currentBlog.methods.detail1.points.map((point) => (
+                  <div className=" flex items-center gap-4" key={point}>
+                    <FaCheck className="text-primary" />
+                    <p> {point}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="max-w-[48%]  m-auto">
+                <div className="imgContainer custom-shadow rounded-md my-4">
+                  <img
+                    src={currentBlog.methods.detail1.img}
+                    className="w-full h-full object-cover"
+                    alt=""
+                  />
+                </div>
+                {currentBlog.methods.detail1.points.map((point) => (
+                  <div className=" flex items-center gap-4" key={point}>
+                    <FaCheck className="text-primary" />
+                    <p> {point}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="para1 py-5">
+              <p className="text-para">{currentBlog.para2}</p>
+            </div>
           </div>
+        </div>
+        {/* end of left container */}
+        <div className="right_section flex-grow">
+          <div className="logo bg-primary max-w-[350px] text-center shadow-md p-4 font-bold text-white w-auto">
+            <h3 className="text-2xl">SAUJNYA DIAGNOSTICS</h3>
+          </div>
+
+          {/* recent posts  */}
+          <RecentPosts />
         </div>
       </div>
     </div>

@@ -1,5 +1,4 @@
-import React from "react";
-
+/* eslint-disable react/prop-types */
 export default function CategoryCard({ test }) {
   return (
     <div className=" group overflow-hidden rounded-md transition-all w-full duration-300 cursor-pointer hover:bg-primary  p-4 custom-shadow flex flex-col justify-center items-center gap-5">

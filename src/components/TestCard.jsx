@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
-export default function TestCard({ test }) {
+export default function TestCard({ test, isOpen, setIsOpen }) {
   return (
     <div className="flex flex-col md:min-w-[290px]  justify-center bg-white items-start gap-2 md:gap-4 custom-shadow md:py-4 md:px-6 px-4 py-4 rounded-lg">
       <div className="offer bg-blue-900 p-2 text-white font-semibold">
@@ -32,7 +33,12 @@ export default function TestCard({ test }) {
         </h2>
       </div>
       <div className="book">
-        <button className="px-4 py-2 text-white bg-primary rounded-full">
+        <button
+          onClick={() => {
+            setIsOpen((s) => !s);
+          }}
+          className="px-4 py-2 text-white bg-primary rounded-full"
+        >
           Book now
         </button>
       </div>

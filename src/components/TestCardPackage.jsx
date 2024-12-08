@@ -17,8 +17,8 @@ const TestCardPackage = ({ name }) => {
             
           </div>
         </div> */}
-        <div className="card_icon flex justify-center items-center md:p-4 lg:p-8 absolute right-3 md:top-[75%] lg:top-[80%]">
-          <div className=" mask_bg  bg-emerald-400 text-lg  "></div>
+        <div className="card_icon flex justify-center items-center md:p-4 lg:p-8 absolute right-1 md:top-[75%] lg:top-[80%]">
+          <div className=" mask_bg  bg-emerald-400   "></div>
           <div className="off_conainer font-bold text-2xl z-40 text-white">
             50% <span className="text-[12px] text-black">OFF</span>
           </div>

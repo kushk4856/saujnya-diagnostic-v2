@@ -308,6 +308,20 @@
   -webkit-mask-repeat: no-repeat;
 }
 
+.skew-bg_nav {
+  position: absolute;
+  top: 0;
+  right: 81%;
+  width: 30%;
+  height: 100%;
+
+  background-color: #ebf0ff;
+  /* Change to fit your needs */
+  transform-origin: top right;
+  transform: skewX(30deg);
+  z-index: -1;
+}
+
 @layer components {
   .max-container {
     max-width: 1340px;
@@ -356,5 +370,41 @@
 
   .theme_btn {
     @apply relative inline-block overflow-hidden align-middle bg-[#0000fe]  font-medium text-white border-[3px] border-[#0000fe] text-center rounded-[35px] px-5 py-2 text-base md:text-xl  lg:px-5 lg:py-3 z-[1] transition-all duration-500;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .flex-start {
+    @apply flex justify-start items-center;
+  }
+
+  .left-border {
+    @apply h-6 gap-2 border-l border-gray-300;
+  }
+
+  .hover-underline {
+    @apply before:absolute relative before:content-[''] before:w-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-primary before:to-primary/10 before:h-[3px] before:bottom-0 before:left-0 hover:before:w-full;
+  }
+
+  .transition-comp {
+    @apply transition-all duration-500;
+  }
+
+  .text-body {
+    @apply font-roboto text-[17px] font-normal text-body_color;
+  }
+
+  .text-title {
+    @apply font-playfair text-[44px] font-bold leading-[1.47];
+  }
+
+  .left-before {
+    @apply before:content-[''] before:absolute before:top-0 before:left-0 before:w-[0px] before:h-full before:border-[1px] before:border-dashed before:border-slate-400;
   }
 }

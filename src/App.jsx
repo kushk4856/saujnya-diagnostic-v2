@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { TestProvider } from "./contexts/TestContext";
 import {
   HomePage,
-  TestCategoryPage,
+  // TestCategoryPage,
   PackagesPage,
   AboutPage,
   ContactPage,
@@ -10,6 +10,7 @@ import {
 } from "./pages";
 import BlogPage from "./pages/BlogPage";
 import BlogDetailPage from "./pages/BlogDetailPage";
+import AppLayout from "./sections/AppLayout";
 
 function App() {
   return (
@@ -17,14 +18,17 @@ function App() {
       <TestProvider>
         <BrowserRouter>
           <Routes>
-            <Route index element={<HomePage />} />
-            <Route path="test-category" element={<TestCategoryPage />} />
-            <Route path="test-package" element={<PackagesPage />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="contact" element={<ContactPage />} />
-            <Route path="blog" element={<BlogPage />} />
-            <Route path="book-test/:id" element={<BookTest />} />
-            <Route path="blog-detail/:blogId" element={<BlogDetailPage />} />
+            <Route element={<AppLayout />}>
+              <Route index element={<Navigate replace to="home" />} />
+              <Route path="/home" element={<HomePage />} />
+              {/* <Route path="test-category" element={<TestCategoryPage />} /> */}
+              <Route path="healthpackages" element={<PackagesPage />} />
+              <Route path="aboutus" element={<AboutPage />} />
+              <Route path="contactus" element={<ContactPage />} />
+              <Route path="blogs" element={<BlogPage />} />
+              <Route path="book-test/:id" element={<BookTest />} />
+              <Route path="blog-detail/:blogId" element={<BlogDetailPage />} />
+            </Route>
           </Routes>
         </BrowserRouter>
       </TestProvider>

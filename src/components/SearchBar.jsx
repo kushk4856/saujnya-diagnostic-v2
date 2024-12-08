@@ -6,13 +6,13 @@ export default function SearchBar() {
   const { searchQuery, setSearchQuery } = useTests();
 
   return (
-    <div className="relative lg:w-1/2 w-full">
+    <div className="relative  w-full">
       <div className="flex  bg-white px-4 items-center justify-between border-primary  m-3 border-[1px] rounded-3xl overflow-hidden">
         <input
           type="text"
           onChange={(e) => setSearchQuery(e.target.value)}
           value={searchQuery}
-          className="w-full outline-none border-none  focus:appearance-none"
+          className="w-[116px] outline-none border-none  focus:appearance-none"
           placeholder="Search Tests..."
         />
         <div>

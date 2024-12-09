@@ -1,11 +1,13 @@
 import { useParams, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTestFetch } from "../hooks/FetchTests";
+import PopUp from "../components/PopUp";
 
 export default function BookTest() {
   const { id } = useParams();
   const { pathname } = useLocation();
   const [currentTest] = useTestFetch(id);
+  const [isOpen, setIsOpen] = useState();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,6 +15,7 @@ export default function BookTest() {
 
   return (
     <div>
+      <PopUp isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="main flex items-start p-10 gap-4">
         <div className="test-detail w-full pl-10 h-[100vh] ">
           <div className="test-img ">
@@ -55,7 +58,12 @@ export default function BookTest() {
             </p>
           </div>
           <div className="book-btn form flex w-[90%]  flex-col rounded-xl p-4 border-2 border-[#CED4DA]">
-            <button className="bg-primary p-2 text-white text-2xl font-semibold rounded-md">
+            <button
+              onClick={() => {
+                setIsOpen((s) => !s);
+              }}
+              className="bg-primary p-2 text-white text-2xl font-semibold rounded-md"
+            >
               Book now
             </button>
           </div>

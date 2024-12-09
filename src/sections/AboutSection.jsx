@@ -19,11 +19,14 @@ const AboutSection = () => {
             </div>
             <div className="text_box lg:mb-11">
               <p className="lg:mb-2 mb-2 font-medium lg:text-base text-sm text-[#6A6A6A] leading-[26px] font-openSans">
-                Welcome to Saujnya Diagnostic, a state-of-the-art medical lab
-                specializing in accurate and reliable diagnostic testing. We
-                analyze blood, urine, tissues, and more, covering all pathology
-                categories like Hematology, Immunology, Microbiology, Molecular
-                Testing, and Biochemistry.
+                Welcome to{" "}
+                <span className="font-semibold text-primary">
+                  Saujnya Diagnostic
+                </span>
+                , a state-of-the-art medical lab specializing in accurate and
+                reliable diagnostic testing. We analyze blood, urine, tissues,
+                and more, covering all pathology categories like Hematology,
+                Immunology, Microbiology, Molecular Testing, and Biochemistry.
               </p>
               <p className="lg:mb-2 mb-2 font-medium lg:text-base text-sm text-[#6A6A6A] leading-[26px] font-openSans">
                 With advanced technology and skilled professionals, we ensure

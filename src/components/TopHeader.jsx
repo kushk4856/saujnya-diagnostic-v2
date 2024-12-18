@@ -4,7 +4,7 @@ import { CiLocationOn } from "react-icons/ci";
 
 const TopHeader = () => {
   return (
-    <div className="top_upper w-full">
+    <div className="top_upper w-full hidden lg:block">
       <div className="font-robot relative bg-primary px-20 py-1 text-[14px] font-normal text-white">
         <div className="skew-bg_top relative"></div>
         <div className="inner-top_header flex-between m-auto w-[1200px]">

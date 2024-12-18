@@ -14,7 +14,8 @@ const AboutSection = () => {
             <div className="title_content mb-2 lg:mb-6">
               <span>Laboratory</span>
               <h2 className="font-bold text-2xl lg:text-[48px] font-palanquin leading-normal">
-                We Provide Reliable & High- Quality Pathology Service
+                Saujnya Diagnostic: Accurate Pathology Testing in Uttam Nagar,
+                Delhi
               </h2>
             </div>
             <div className="text_box lg:mb-11">
@@ -52,7 +53,7 @@ const AboutSection = () => {
                 to="/test-package"
                 className="theme_btn  font-montserrat "
               >
-                Get In Touch
+                Book an Appointment
                 {/* <img src={btnArrow} alt="" /> */}
               </NavLink>
             </div>
@@ -82,7 +83,7 @@ const AboutSection = () => {
                           <span>Years</span>
                         </h2>
                         <h3 className="font-montserrat text-base md:text-2xl font-medium">
-                          Of Expertise in the Path labs
+                          of Excellence in Diagnostic Services
                         </h3>
                       </div>
                     </div>

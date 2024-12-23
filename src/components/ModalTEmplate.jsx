@@ -27,14 +27,13 @@ const Modal = ({ isOpen, onClose, title, children }) => {
       />
 
       {/* Modal Container */}
-      <div className="fixed inset-0 z-[999] overflow-y-auto">
-        <div className="flex min-h-full items-center justify-center p-4">
+      <div className="fixed inset-0 z-[999] overflow-y-auto overflow-x-hidden">
+        <div className="flex  items-center justify-center h-full p-4">
           {/* Modal Content with fade and slide */}
           <div
             className={`relative flex w-full max-w-[450px] transform flex-col rounded-lg bg-white shadow-lg transition-all duration-300 ${
               isOpen ? "modal_animation opacity-100" : "opacity-0"
             }`}
-            style={{ maxHeight: "calc(100vh - 2rem)" }}
           >
             {/* Fixed Header */}
             <div className="flex flex-shrink-0 items-center justify-center border-b px-8 py-4">

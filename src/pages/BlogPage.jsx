@@ -8,7 +8,7 @@ const BlogPage = () => {
   return (
     <div>
       <BreadCrumSection bgImg={BlogImg} currentPage={"Blog Page"} />
-      <div className="flex max-container  flex-wrap  my-24">
+      <div className="flex max-container  flex-wrap py-5 lg:my-24">
         {blogCard.map((blog) => (
           <ArticleCard key={blog.bannerImg} blog={blog} />
         ))}

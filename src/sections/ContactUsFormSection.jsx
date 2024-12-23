@@ -36,21 +36,21 @@ const ContactUsFormSection = () => {
   return (
     <div className="contact_form max-container">
       {/* -------form section -------- */}
-      <div className="flex lg:gap-10 lg:flex-row flex-col items-center  justify-between">
-        <div className="contact flex flex-col lg:w-1/2 lg:gap-3 bg-white  rounded-[40px]   ">
+      <div className="flex lg:gap-10 px-4 lg:px-0 lg:flex-row flex-col items-center  justify-between">
+        <div className="contact flex flex-col lg:w-1/2 lg:gap-3 bg-white items-center  rounded-[40px]   ">
           <p className="text-primary font-montserrat font-medium">
             Contact Form
           </p>
-          <h3 className="text-black font-montserrat font-bold text-4xl">
+          <h3 className="text-black font-montserrat mb-3 font-bold text-3xl lg:text-4xl">
             Get in touch with us
           </h3>
-          <div className="form_text lg:mb-5">
+          <div className="form_text mb-5">
             <p className="text-[#555574] text-base font-openSans ">
               Fill out the form below to request your Test appointment. We’ll
               confirm your time and send you a reminder.
             </p>
           </div>
-          <form className=" lg:mt-6 " onSubmit={handleSubmit}>
+          <form className=" lg:mt-6 w-full " onSubmit={handleSubmit}>
             <div className="row_flex flex lg:flex-row flex-col">
               <div className="form-group lg:w-1/2 lg:px-2  mb-6">
                 <input
@@ -116,7 +116,7 @@ const ContactUsFormSection = () => {
           </form>
         </div>
 
-        <div className="relative px-6">
+        <div className="relative hidden lg:block px-6">
           <img src={formBg} alt="" />
           <div className="package_img absolute -top-16 custom-shadow-3 -left-7 overflow-hidden rounded-[35px] w-[50%] h-[400px] ">
             <img

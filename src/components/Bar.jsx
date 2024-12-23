@@ -10,7 +10,7 @@ export default function Bar({ itag, percent, time, circle, type }) {
     }, time);
   }, [count, percent, time]);
   return (
-    <li className="col-3">
+    <li className="col-3 min-w-[227px] md:ml-0 ml-7">
       <div className="skill ml-4">
         <div className="outer">
           <div className="inner">

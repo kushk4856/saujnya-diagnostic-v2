@@ -1,7 +1,13 @@
 const AboutMissionCards = () => {
   return (
-    <div className={`   p-3  w-[33.33%]`}>
-      <div className=" items-center p-10   justify-center rounded-[40px]  bg-white  shadow-md flex-col flex">
+    <div className={` p-3  w-full  lg:w-[33.33%]`}>
+      <div
+        style={{
+          boxShadow:
+            "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
+        }}
+        className=" items-center p-10   justify-center rounded-[40px]  bg-white  flex-col flex"
+      >
         <div className="mb-8 w-full flex flex-col justify-center items-center border-b-gray-50-500 border-b-[1px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"

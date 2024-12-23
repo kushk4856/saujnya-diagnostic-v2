@@ -17,29 +17,29 @@ const PopUp = ({ isOpen, setIsOpen }) => {
         onClose={() => setIsOpen(false)}
         title="How Can We Assist You"
       >
-        <div className="space-y-6 ">
+        <div className="md:space-y-6 space-y-3 ">
           <section className="flex justify-between px-12 ">
             <div className="img">
               <img src={bannerPopup} alt="" />
             </div>
           </section>
-          <section className="flex justify-between px-12 ">
-            <label htmlFor="name " className="text-lg text-primary">
+          <section className="flex md:justify-between justify-center gap-1  flex-col md:px-12 ">
+            {/* <label htmlFor="name " className="text-lg text-primary">
               Name
-            </label>
+            </label> */}
             <input
               type="text"
-              className=" px-3 py-1 border rounded-full border-primary text-base h-8 w-[170px]"
+              className=" px-3 py-1 border rounded-full border-primary text-base h-8 "
               placeholder="Enter Your Name"
             />
           </section>
-          <section className="flex justify-between px-12 ">
-            <label htmlFor="name" className="text-lg text-primary">
+          <section className="flex md:justify-between justify-center  gap-1 flex-col md:px-12 ">
+            {/* <label htmlFor="name" className="text-lg text-primary">
               Mobile No.
-            </label>
+            </label> */}
             <input
               type="text"
-              className=" px-3 py-1 border rounded-full border-primary text-base h-8 w-[170px]"
+              className=" px-3 py-1 border rounded-full border-primary text-base h-8 "
               placeholder="Phone No."
             />
           </section>

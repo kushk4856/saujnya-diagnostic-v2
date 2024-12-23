@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo_new.webp";

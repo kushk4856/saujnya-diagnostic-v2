@@ -2,8 +2,11 @@ import { FaMapMarked } from "react-icons/fa";
 
 const ContactCard = () => {
   return (
-    <div className="w-1/3 p-4">
-      <div className="contact_card rounded-3xl hover:before:top-0 hover:before:rounded-none cursor-pointer custom-shadow-2 space-y-5 p-8 relative  group z-10 ">
+    <div className="lg:w-1/3 w-full md:w-1/2 p-4">
+      <div
+        style={{ background: "linear-gradient(45deg, transparent, #1a73e8b0)" }}
+        className="contact_card rounded-3xl hover:before:top-0 hover:before:rounded-none cursor-pointer custom-shadow-2 space-y-5 p-8 relative  group z-10 "
+      >
         <div className="icon">
           <FaMapMarked
             size={50}

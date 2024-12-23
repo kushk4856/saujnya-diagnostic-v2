@@ -42,14 +42,14 @@ const BlogDetailPage = () => {
   return (
     <div>
       <BreadCrumSection bgImg={BlogImg} />
-      <div className="max-w-[1200px] flex gap-10 m-auto py-8">
-        <div className="left_section w-2/3">
+      <div className="max-w-[1200px] lg:px-0 px-6 flex gap-10 lg:flex-row flex-col-reverse m-auto py-8">
+        <div className="left_section w-full lg:w-2/3">
           <div className="Blog_banner">
             <div className="blogImg">
               <img src={currentBlog.bannerImg} alt="" />
             </div>
 
-            <div className="blogDetail flex gap-8  items-center py-5 border-b-[1px]">
+            <div className="blogDetail flex md:gap-8 gap-2  items-center py-5 border-b-[1px]">
               <div className="admin flex items-center   text-para gap-3">
                 <FaUserEdit className="text-primary" /> Admin
               </div>

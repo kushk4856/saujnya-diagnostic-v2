@@ -16,8 +16,8 @@ export default function BookTest() {
   return (
     <div>
       <PopUp isOpen={isOpen} setIsOpen={setIsOpen} />
-      <div className="main flex items-start p-10 gap-4">
-        <div className="test-detail w-full pl-10 h-[100vh] ">
+      <div className="main lg:flex-row flex-col flex items-start px-4 py-6 lg:p-10 gap-4">
+        <div className="test-detail w-full lg:pl-10  ">
           <div className="test-img ">
             <img src={currentTest.details?.img} alt="" />
           </div>
@@ -34,7 +34,7 @@ export default function BookTest() {
         </div>
 
         {/* --------------------book now ------------- */}
-        <div className="book-now flex flex-col gap-6 justify-center items-center  w-1/2 sticky top-[50px]  ">
+        <div className="book-now flex flex-col gap-6 justify-center items-center w-full  lg:w-1/2 sticky top-[50px]  ">
           <div className="form flex w-[90%]  flex-col rounded-xl p-6 border-2 border-[#CED4DA] ">
             <h3 className="font-semibold text-primary py-4 font-montserrat text-2xl custom-underline before:h-[1px]">
               ₹{currentTest.price}.00

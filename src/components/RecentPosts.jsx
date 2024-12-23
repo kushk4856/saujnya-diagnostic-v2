@@ -3,9 +3,9 @@ import { blogCard } from "../consonants";
 
 const RecentPosts = () => {
   return (
-    <div className="bg-white p-6 my-6 max-w-[350px] rounded-lg shadow-md">
+    <div className="bg-white p-6 my-6 w-full lg:max-w-[350px] rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-4">Recent Posts</h2>
-      <div className="grid grid-cols-1  gap-6">
+      <div className="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1  gap-6">
         {blogCard.map(
           (post, index) =>
             index < 4 && (

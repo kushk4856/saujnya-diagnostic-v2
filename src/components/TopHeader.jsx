@@ -7,7 +7,7 @@ const TopHeader = () => {
     <div className="top_upper w-full hidden lg:block">
       <div className="font-robot relative bg-primary px-20 py-1 text-[14px] font-normal text-white">
         <div className="skew-bg_top relative"></div>
-        <div className="inner-top_header flex-between m-auto w-[1200px]">
+        <div className="inner-top_header flex-between m-auto max-w-[1200px]">
           <div className="left-top_header flex-between z-20">
             <div className="call flex-between px-3">
               <IoCallOutline className="size-[20px] font-semibold" />

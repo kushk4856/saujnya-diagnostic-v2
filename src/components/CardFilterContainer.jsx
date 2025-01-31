@@ -21,8 +21,8 @@ const CardFilterContainer = () => {
             onClick={() => setSelectedCategory(category)}
             className={`px-4 py-2 rounded transition-colors ${
               selectedCategory === category
-                ? "bg-blue-600 text-white"
-                : "bg-gray-200 text-gray-800 hover:bg-blue-600 hover:text-white"
+                ? "bg-primary text-white"
+                : "bg-gray-200 text-gray-800  hover:text-white relative before:absolute before:w-0 before:-z-10 before:rounded before:h-full before:bg-primary before:transition-all before:duration-500 before:ease-in-out hover:before:w-full before:content-[''] before:top-0 before:left-0"
             }`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

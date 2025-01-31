@@ -2,7 +2,7 @@
 import Modal from "./ModalTEmplate";
 import bannerPopup from "../assets/images/banner-popup-1.png";
 
-const PopUp = ({ isOpen, setIsOpen }) => {
+const PopUp = ({ isOpen, onClose }) => {
   return (
     <div className="">
       {/* <button
@@ -12,11 +12,7 @@ const PopUp = ({ isOpen, setIsOpen }) => {
         Privacy & Policy
       </button> */}
 
-      <Modal
-        isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
-        title="How Can We Assist You"
-      >
+      <Modal isOpen={isOpen} onClose={onClose} title="How Can We Assist You">
         <div className="md:space-y-6 space-y-3 ">
           <section className="flex justify-between px-12 ">
             <div className="img">

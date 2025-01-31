@@ -7,7 +7,17 @@ export default function BookTest() {
   const { id } = useParams();
   const { pathname } = useLocation();
   const [currentTest] = useTestFetch(id);
-  const [isOpen, setIsOpen] = useState();
+  const [isOpen, setIsOpen] = useState(() => {
+    // Check localStorage on initial load
+    const hasShownPopup = localStorage.getItem("hasShownPopup");
+    return !hasShownPopup;
+  });
+
+  // Close popup and set localStorage flag
+  const handleClosePopup = () => {
+    localStorage.setItem("hasShownPopup", "true");
+    setIsOpen(false);
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,7 +25,7 @@ export default function BookTest() {
 
   return (
     <div>
-      <PopUp isOpen={isOpen} setIsOpen={setIsOpen} />
+      <PopUp isOpen={isOpen} onClose={handleClosePopup} />
       <div className="main lg:flex-row flex-col flex items-start px-4 py-6 lg:p-10 gap-4">
         <div className="test-detail w-full lg:pl-10  ">
           <div className="test-img ">

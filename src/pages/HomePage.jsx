@@ -14,10 +14,21 @@ import DetailSection from "../sections/DetailSection";
 import ReviewSection from "../sections/ReviewSection";
 
 export default function HomePage() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(() => {
+    // Check localStorage on initial load
+    const hasShownPopup = localStorage.getItem("hasShownPopup");
+    return !hasShownPopup;
+  });
+
+  // Close popup and set localStorage flag
+  const handleClosePopup = () => {
+    localStorage.setItem("hasShownPopup", "true");
+    setIsOpen(false);
+  };
+
   return (
     <div className="overflow-hidden">
-      <PopUp isOpen={isOpen} setIsOpen={setIsOpen} />
+      <PopUp isOpen={isOpen} onClose={handleClosePopup} />
       <Hero />
       <AboutSection />
       <HealthPackage isOpen={isOpen} setIsOpen={setIsOpen} />

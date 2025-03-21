@@ -326,50 +326,7 @@
 }
 
 
-/* ====card filter === */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
 
-.filters {
-  margin-bottom: 2rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.filters button {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 4px;
-  background: #eee;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.filters button.active {
-  background: #646cff;
-  color: white;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.card {
-  background: white;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.card h3 {
-  margin-top: 0;
-}
 
 
 @layer components {
@@ -377,6 +334,28 @@
     max-width: 1340px;
     margin: 0 auto;
     padding-inline: 10px;
+  }
+
+  .hover_blue_fill {
+    z-index: 0;
+  }
+
+  .hover_blue_fill::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -2;
+    background: #288de9;
+    border-radius: 0.25rem;
+    transition: all .5s ease-in-out;
+
+  }
+
+  .hover_blue_fill:hover::before {
+    width: 100%;
   }
 
   .custom-shadow {
@@ -420,7 +399,7 @@
   }
 
   .theme_btn {
-    @apply relative inline-block overflow-hidden align-middle bg-[#0000fe] font-medium text-white border-[3px] border-[#0000fe] text-center rounded-[35px] px-5 py-2 text-base md:text-xl lg:px-5 lg:py-3 z-[1] transition-all duration-500;
+    @apply relative inline-block overflow-hidden align-middle bg-primary font-medium text-white border-[3px] border-primary text-center rounded-[35px] px-5 py-2 text-base md:text-xl lg:px-5 lg:py-3 z-[1] transition-all duration-500;
   }
 
   .flex-center {

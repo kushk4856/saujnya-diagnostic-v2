@@ -1,14 +1,11 @@
 /* eslint-disable react/prop-types */
-// import { Beaker } from "lucide-react";
 
-// import img from "../assets/images/test-1.jpg";
-
-const TestCardPackage = ({ name }) => {
+const TestCardPackage = ({ name, img }) => {
   return (
     <div className="max-w-lg rounded-lg m-4 shadow-lg bg-white p-6 space-y-6">
       <div className="relative">
         <img
-          src="https://saujnyadiagnostic.com/images/Kidney%20Profile.webp"
+          src={img}
           alt="Scientist examining blue liquid in flask"
           className="w-full rounded-lg object-cover"
         />
@@ -17,12 +14,12 @@ const TestCardPackage = ({ name }) => {
             
           </div>
         </div> */}
-        <div className="card_icon flex justify-center items-center md:p-4 lg:p-8 absolute right-1 md:top-[75%] lg:top-[80%]">
+        {/* <div className="card_icon flex justify-center items-center md:p-4 lg:p-8 absolute right-1 md:top-[75%] lg:top-[80%]">
           <div className=" mask_bg  bg-emerald-400   "></div>
           <div className="off_conainer font-bold text-2xl z-40 text-white">
             50% <span className="text-[12px] text-black">OFF</span>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="space-y-3 px-4 py-10">

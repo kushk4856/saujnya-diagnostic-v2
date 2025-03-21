@@ -46,10 +46,10 @@ export default function DetailSection() {
           </div>
           <div className="w-full lg:w-1/2 flex justify-center items-center">
             <p className=" leading-7 text-[#555574] font-normal font-openSans text-sm md:text-base">
-              Ready to take the next step towards a healthier smile? Use our
-              easy online booking system to schedule your dental appointment.
-              Simply select a convenient date and time, provide some basic
-              information, and we’ll handle the rest.
+              At <strong>Saujnya Diagnostic</strong>, we are committed to
+              providing accurate and timely diagnostic services. Contact us for
+              appointments, inquiries, or test reports. Call us, email us, or
+              visit our lab—we're here to assist you with care and precision!
             </p>
           </div>
         </div>
@@ -151,7 +151,7 @@ export default function DetailSection() {
                   ></input>
                 </div>
               </div>
-              <div className="form-group lg:w-2/3 lg:px-2  mb-6">
+              <div className="form-group lg:w-full lg:px-2  mb-6">
                 <h5
                   htmlFor="message"
                   className="text-primary py-2 text-lg font-semibold"

@@ -3,8 +3,14 @@ import BlogImg from "../assets/images/blog-bg.webp";
 import ArticleCard from "../components/ArticleCard";
 
 import { blogCard } from "../consonants";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const BlogPage = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div>
       <BreadCrumSection bgImg={BlogImg} currentPage={"Blog Page"} />

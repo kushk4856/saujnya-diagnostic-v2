@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 import Heading from "./Heading";
 
-export default function PackageSlider({ children, heading, showSlide = 4 }) {
+export default function PackageSlider({ children, heading, showSlide = 3 }) {
   let settings = {
     dots: false,
     infinite: true,

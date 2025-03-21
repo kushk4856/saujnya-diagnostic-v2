@@ -13,7 +13,7 @@ const AboutSection = () => {
           <div className="content_block mt-6 lg:mr-6">
             <div className="title_content mb-2 lg:mb-6">
               <span>Laboratory</span>
-              <h2 className="font-bold text-2xl lg:text-[48px] font-palanquin leading-normal">
+              <h2 className="font-bold text-2xl lg:text-[48px] font-palanquin leading-[1.3]">
                 Saujnya Diagnostic: Accurate Pathology Testing in Uttam Nagar,
                 Delhi
               </h2>
@@ -51,7 +51,7 @@ const AboutSection = () => {
             <div className="about_btn py-2 text-center lg:text-justify">
               <NavLink
                 to="/test-package"
-                className="theme_btn  font-montserrat "
+                className="theme_btn bg-primary font-montserrat "
               >
                 Book an Appointment
                 {/* <img src={btnArrow} alt="" /> */}

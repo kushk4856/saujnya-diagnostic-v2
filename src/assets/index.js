@@ -10,6 +10,14 @@ import vitamin from "../assets/images/vitamin.svg";
 import liver from "../assets/images/liver.svg";
 import testImg from "../assets/images/testImg.jpg";
 import detailBg from "../assets/images/detail.jpg";
+import ancadvance from "../assets/images/tests/ANC-Profile-Advance.webp";
+import obesityPanel from "../assets/images/tests/ANC-Profile-Basic.webp";
+import cancerScreening from "../assets/images/tests/cancer-screening-female.png";
+import stdAdvanced from "../assets/images/tests/STD-advanced-package.png";
+import stdBasic from "../assets/images/tests/STD-basic-packages.png";
+import AllergyComprehensive from "../assets/images/tests/Allergy-Comprehensive-profile.png";
+import vitaminScreening from "../assets/images/tests/vitamin-screening-package.png";
+import slider1 from "../assets/images/slider1.webp";
 
 export {
   logo,
@@ -24,4 +32,12 @@ export {
   liver,
   testImg,
   detailBg,
+  ancadvance,
+  obesityPanel,
+  slider1,
+  cancerScreening,
+  stdAdvanced,
+  AllergyComprehensive,
+  stdBasic,
+  vitaminScreening,
 };

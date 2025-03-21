@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import BreadCrumSection from "../components/BreadCrumSection";
 import BlogImg from "../assets/images/blog-bg.webp";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { useFetchBlog } from "../hooks/FetchBlogs";
 import { FaUserEdit } from "react-icons/fa";
 import { FaComments } from "react-icons/fa";
@@ -15,6 +15,11 @@ import RecentPosts from "../components/RecentPosts";
 const BlogDetailPage = () => {
   const { blogId } = useParams();
   const [currentBlog, isLoading, error] = useFetchBlog(blogId);
+
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     if (!blogId) {

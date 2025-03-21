@@ -11,15 +11,22 @@ const TopHeader = () => {
           <div className="left-top_header flex-between z-20">
             <div className="call flex-between px-3">
               <IoCallOutline className="size-[20px] font-semibold" />
-              <p>+1 (044) 123 456 789</p>
+              <p>+91 93184 16590</p>
             </div>
             <div className="email flex-between left-border px-3">
               <IoMdMail className="size-[20px] font-semibold" />
-              <p>info@travon.com</p>
+              <p>
+                <a href="mailto:saujnyadiagnostic@gmail.com">
+                  saujnyadiagnostic@gmail.com
+                </a>
+              </p>
             </div>
             <div className="address flex-between left-border px-3">
               <CiLocationOn className="size-[20px] font-semibold" />
-              <p>Jaina Tower-I, DC, New Delhi, India</p>
+              <p>
+                Rz-56, Pankha Rd, Block C, Mahindra Park, Uttam Nagar, New
+                Delhi-59
+              </p>
             </div>
           </div>
           <div className="right-top_header"></div>

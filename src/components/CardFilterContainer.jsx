@@ -13,7 +13,7 @@ const CardFilterContainer = () => {
   );
 
   return (
-    <div className="p-6 max-container h-auto mx-auto">
+    <div className="p-6 py-16 max-container h-auto mx-auto">
       <div className="flex flex-wrap justify-center gap-4 mb-6">
         {categories.map((category) => (
           <motion.button
@@ -22,10 +22,10 @@ const CardFilterContainer = () => {
             className={`px-4 py-2 rounded transition-colors ${
               selectedCategory === category
                 ? "bg-primary text-white"
-                : "bg-gray-200 text-gray-800  hover:text-white relative before:absolute before:w-0 before:-z-10 before:rounded before:h-full before:bg-primary before:transition-all before:duration-500 before:ease-in-out hover:before:w-full before:content-[''] before:top-0 before:left-0"
+                : "bg-gray-200 text-gray-800 hover:text-white relative hover_blue_fill "
             }`}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            // whileHover={{ scale: 1.05 }}
+            // whileTap={{ scale: 0.95 }}
           >
             {category}
           </motion.button>
@@ -51,6 +51,7 @@ const CardFilterContainer = () => {
               <Link to={`/book-test/${card.id}?name=${card.name}`}>
                 <OsmoticTestingCard
                   name={card.testName}
+                  img={card.image}
                   category={card.category}
                 />
               </Link>

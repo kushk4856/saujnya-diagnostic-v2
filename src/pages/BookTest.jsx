@@ -23,13 +23,15 @@ export default function BookTest() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  console.log(id);
+
   return (
     <div>
       <PopUp isOpen={isOpen} onClose={handleClosePopup} />
       <div className="main lg:flex-row flex-col flex items-start px-4 py-6 lg:p-10 gap-4">
         <div className="test-detail w-full lg:pl-10  ">
           <div className="test-img ">
-            <img src={currentTest.details?.img} alt="" />
+            <img src={currentTest?.details?.img} alt="" />
           </div>
 
           <div className="test-detail flex flex-col gap-6 py-6">

@@ -41,6 +41,8 @@ function useTestFetch(id) {
         const res = await fetch(`${BASE_URL}`);
         const data = await res.json();
 
+        console.log(data);
+
         dispatch({ type: "test/loaded", payload: data.tests[id] });
       } catch {
         dispatch({

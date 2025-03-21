@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import { banner1, banner2, banner3 } from "../assets";
+import { banner1, banner2, banner3, slider1 } from "../assets";
 export default function SimpleSlider() {
   var settings = {
     dots: true,
@@ -23,7 +23,7 @@ export default function SimpleSlider() {
       <div className="relative h-56   overflow-hidden rounded-3xl md:h-[60vh]">
         <div className=" duration-700 h-full  ease-in-out rounded-3xl  ">
           <img
-            src={banner2}
+            src={slider1}
             className=" object-fill h-full block w-full "
             alt="..."
           />
